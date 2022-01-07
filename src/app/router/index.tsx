@@ -122,7 +122,7 @@ export const MainRouter = (): JSX.Element => {
                             >
                                 <Toolbar variant={'dense'}>
                                     <Typography variant={'caption'} align={'center'} style={{ flex: '1 1 0px' }}>
-                                        {`Copyright ${new Date().getFullYear()} Eaton. Licensed under BSD-3-Clause.`}
+                                        {`Copyright ${new Date().getFullYear()} V Systems.`}
                                     </Typography>
                                 </Toolbar>
                             </AppBar>

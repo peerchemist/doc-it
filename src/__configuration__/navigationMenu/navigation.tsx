@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Docs from '../../docs';
-import { MarkdownPage, DevResources, Roadmap } from '../../app/pages';
+import { MarkdownPage, DevResources } from '../../app/pages';
 
 export type SimpleNavItem = {
     title: string;
@@ -19,33 +19,102 @@ export type RedirectItem = {
 // Change scripts/crawl/sitemap.json after you make changes here.
 export const pageDefinitions: SimpleNavItem[] = [
     {
-        title: 'What is Brightlayer UI?',
+        title: 'What is V Systems?',
         url: '/overview',
-        component: <MarkdownPage title={'What is Brightlayer UI?'} markdown={Docs.Overview} />,
+        component: <MarkdownPage title={'What is V Systems'} markdown={Docs.Overview} />,
     },
     {
-        title: 'Starting a Project',
+        title: 'Get Started',
         url: '/get-started',
         pages: [
+            {
+                title: 'VSYS Stack',
+                url: '/new-project',
+                component: <MarkdownPage title={'VSYS Stack'} markdown={Docs.GetStarted.NewProject} />,
+            },
             {
                 title: 'Where to Begin?',
                 url: '/new-project',
                 component: <MarkdownPage title={'Where to Begin?'} markdown={Docs.GetStarted.NewProject} />,
             },
             {
-                title: 'Web Apps',
+                title: 'Quick Tutorials',
                 url: '/web',
-                component: <MarkdownPage title={'Web Apps'} markdown={Docs.GetStarted.Web} />,
+                component: <MarkdownPage title={'Quick Tutorials'} markdown={Docs.GetStarted.Web} />,
             },
             {
-                title: 'Mobile Apps',
-                url: '/mobile',
-                component: <MarkdownPage title={'Mobile Apps'} markdown={Docs.GetStarted.Mobile} />,
+                title: 'Smart Contracts',
+                url: '/smart-contracts',
+                pages: [
+                    {
+                        title: 'Token Contract',
+                        url: '/token-contract',
+                        component: (
+                            <MarkdownPage title={'Token Contract'} markdown={Docs.GetStarted.SmartContracts.TokenContract} />
+                        ),
+                    },
+                    {
+                        title: 'Lock Contract',
+                        url: '/lock-contract',
+                        component: (
+                            <MarkdownPage title={'Lock Contract'} markdown={Docs.GetStarted.SmartContracts.LockContract} />
+                        ),
+                    },
+                    {
+                        title: 'NFT Contract',
+                        url: '/nft-contract',
+                        component: (
+                            <MarkdownPage title={'Non-Fungible Token Contract'} markdown={Docs.GetStarted.SmartContracts.NftContract} />
+                        ),
+                    },
+                    {
+                        title: 'Payment Contract',
+                        url: '/payment-contract',
+                        component: (
+                            <MarkdownPage title={'Payment Channel Contract'} markdown={Docs.GetStarted.SmartContracts.PaymentContract} />
+                        ),
+                    },
+                    {
+                        title: 'V Swap Contract',
+                        url: '/v-swap',
+                        component: (
+                            <MarkdownPage title={'V Swap Contract'} markdown={Docs.GetStarted.SmartContracts.VswapContract} />
+                        ),
+                    },
+                    {
+                        title: 'V Atomic Swap Contract',
+                        url: '/v-atomic-swap',
+                        component: (
+                            <MarkdownPage title={'V Atomic Swap'} markdown={Docs.GetStarted.SmartContracts.VatomicswapContract} />
+                        ),
+                    },
+                    {
+                        title: 'V Stable Swap Contract',
+                        url: '/v-stable-swap',
+                        component: (
+                            <MarkdownPage title={'V Stable Swap'} markdown={Docs.GetStarted.SmartContracts.VstableswapContract} />
+                        ),
+                    },
+                    {
+                        title: 'V Option Contract',
+                        url: '/v-option',
+                        component: (
+                            <MarkdownPage title={'V Option Contract'} markdown={Docs.GetStarted.SmartContracts.VoptionContract} />
+                        ),
+                    },
+                    {
+                        title: 'V Escrow Contract',
+                        url: '/v-escrow',
+                        component: (
+                            <MarkdownPage title={'V Escrow Contract'} markdown={Docs.GetStarted.SmartContracts.VescrowContract} />
+                        ),
+                    },
+                ],
             },
         ],
     },
     {
-        title: 'Developing with BLUI',
+        title: 'API References',
         url: '/development',
         pages: [
             {
@@ -142,79 +211,6 @@ export const pageDefinitions: SimpleNavItem[] = [
         ],
     },
     {
-        title: 'Design Patterns',
-        url: '/patterns',
-        component: <MarkdownPage title={'Design Patterns'} markdown={Docs.Patterns.Home} />,
-        pages: [
-            {
-                title: 'Account Menu',
-                url: '/account-menu',
-                component: <MarkdownPage title={'Account Menu'} markdown={Docs.Patterns.AccountMenu} />,
-            },
-            {
-                title: 'App Bars',
-                url: '/appbar',
-                component: <MarkdownPage title={'App Bars'} markdown={Docs.Patterns.AppBar} />,
-            },
-            {
-                title: 'Empty States',
-                url: '/empty-states',
-                component: <MarkdownPage title={'Empty States'} markdown={Docs.Patterns.EmptyStates} />,
-            },
-            {
-                title: 'Forms and Validation',
-                url: '/forms',
-                component: <MarkdownPage title={'Forms and Validation'} markdown={Docs.Patterns.Forms} />,
-            },
-            {
-                title: 'Internationalization',
-                url: '/internationalization',
-                component: <MarkdownPage title={'Internationalization'} markdown={Docs.Patterns.I18N} />,
-            },
-            {
-                title: 'Lists & Tables',
-                url: '/lists',
-                component: <MarkdownPage title={'Lists & Tables'} markdown={Docs.Patterns.Lists} />,
-            },
-            {
-                title: 'Loading & Waiting',
-                url: '/loading',
-                component: <MarkdownPage title={'Loading & Waiting'} markdown={Docs.Patterns.Loading} />,
-            },
-            {
-                title: 'Navigation',
-                url: '/navigation',
-                component: <MarkdownPage title={'Navigation'} markdown={Docs.Patterns.Navigation} />,
-            },
-            {
-                title: 'Overlays',
-                url: '/overlay',
-                component: <MarkdownPage title={'Overlays'} markdown={Docs.Patterns.Overlays} />,
-            },
-            {
-                title: 'Page Layout',
-                url: '/layout',
-                component: <MarkdownPage title={'Page Layout'} markdown={Docs.Patterns.Layout} />,
-                hidden: true,
-            },
-            {
-                title: 'Steppers',
-                url: '/steppers',
-                component: <MarkdownPage title={'Steppers'} markdown={Docs.Patterns.Steppers} />,
-            },
-            {
-                title: 'User Authentication',
-                url: '/user-auth',
-                component: <MarkdownPage title={'User Authentication'} markdown={Docs.Patterns.UserAuth} />,
-            },
-            {
-                title: 'Visualizations',
-                url: '/visualizations',
-                component: <MarkdownPage title={'Visualizations'} markdown={Docs.Patterns.Visualizations} />,
-            },
-        ],
-    },
-    {
         title: 'Workflows',
         url: '/workflows',
         hidden: true,
@@ -229,113 +225,20 @@ export const pageDefinitions: SimpleNavItem[] = [
         ],
     },
     {
-        title: 'Style Guide',
-        url: '/style',
-        component: <MarkdownPage title={'Style Guide'} markdown={Docs.Style.Home} />,
-        pages: [
-            {
-                title: 'Color Palette',
-                url: '/color',
-                component: <MarkdownPage title={'Color Palette'} markdown={Docs.Style.Color} />,
-            },
-            {
-                title: 'Iconography',
-                url: '/iconography',
-                component: (
-                    <MarkdownPage title={'Iconography'} markdown={Docs.Style.Iconography} background={'dark'} sidebar />
-                ),
-            },
-            {
-                title: 'Illustrations',
-                url: '/illustrations',
-                component: <MarkdownPage title={'Illustrations'} markdown={Docs.Style.Illustrations} />,
-            },
-            {
-                title: 'Typography',
-                url: '/typography',
-                component: <MarkdownPage title={'Typography'} markdown={Docs.Style.Typography} />,
-            },
-            {
-                title: 'Themes',
-                url: '/themes',
-                component: <MarkdownPage title={'Themes'} markdown={Docs.Style.Themes} />,
-            },
-        ],
-    },
-    {
-        title: 'Community',
-        url: '/community',
-        component: <MarkdownPage title={'Brightlayer UI Community'} markdown={Docs.Community.Home} />,
-        pages: [
-            {
-                title: 'Licensing',
-                url: '/license',
-                component: <MarkdownPage title={'Licensing'} markdown={Docs.Community.License} />,
-            },
-            {
-                title: 'Innersourcing',
-                url: '/innersourcing',
-                component: <MarkdownPage title={'Innersourcing'} markdown={Docs.Community.Innersourcing} />,
-            },
-            {
-                title: 'Report Bugs',
-                url: '/bugs',
-                component: <MarkdownPage title={'Report Bugs'} markdown={Docs.Community.Bugs} />,
-            },
-            {
-                title: 'Request Features',
-                url: '/features',
-                component: <MarkdownPage title={'Request Features'} markdown={Docs.Community.Features} />,
-            },
-            {
-                title: 'FAQ',
-                url: '/faq',
-                component: <MarkdownPage title={'FAQ'} markdown={Docs.Community.FAQ} />,
-            },
-            {
-                title: 'Our Team',
-                url: '/our-team',
-                component: <MarkdownPage title={'Our Team'} markdown={Docs.Community.OurTeam} background={'dark'} />,
-            },
-            {
-                title: 'Contact Us',
-                url: '/contactus',
-                component: <MarkdownPage title={'Contact Us'} markdown={Docs.Community.Contact} />,
-            },
-        ],
-    },
-    {
-        title: 'Resources',
+        title: 'Tools',
         url: '/resources',
         pages: [
             {
-                title: 'Developer Resources',
+                title: 'Node Explorer',
                 url: '/developer',
                 component: <DevResources />,
             },
             {
-                title: 'Designer Resources',
+                title: 'Testnet Explorer',
                 url: '/designer',
                 component: <MarkdownPage title={'Designer Resources'} markdown={Docs.Resources.DesignerResources} />,
             },
         ],
-    },
-    {
-        title: 'Roadmap',
-        url: '/roadmap',
-        component: <Roadmap />,
-    },
-    {
-        title: 'Attributions',
-        url: '/attributions',
-        hidden: true,
-        component: <MarkdownPage title={'Attributions'} markdown={Docs.Community.Attributions} />,
-    },
-    {
-        title: 'Brightlayer UI ',
-        url: '/brightlayer-ui-rebrand',
-        hidden: true,
-        component: <MarkdownPage title={'Brightlayer UI Rebrand'} markdown={Docs.Community.Rebrand} />,
     },
 ];
 

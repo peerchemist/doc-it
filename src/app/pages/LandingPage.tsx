@@ -24,7 +24,7 @@ import { useHistory } from 'react-router-dom';
 
 import { cardData } from '../../__configuration__/landingPage/cardData';
 import { getScheduledSiteConfig } from '../../__configuration__/themes';
-import { Spacer } from '@brightlayer-ui/react-components';
+// import { Spacer } from '@brightlayer-ui/react-components';
 import { currentMaintainers, contributors } from '../../__configuration__/contributors';
 
 import developImage from '../assets/home/develop.jpg';

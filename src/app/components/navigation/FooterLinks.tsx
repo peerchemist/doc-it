@@ -141,7 +141,7 @@ export const FooterLinks: React.FC = (): JSX.Element => {
                         className={classes.socialIcon}
                         style={{ fontSize: 120 }}
                         onClick={(): void => {
-                            window.open('https://www.eaton.com', '_blank');
+                            window.open('https://www.v.systems', '_blank');
                         }}
                     />
                     {/* <Dribbble
