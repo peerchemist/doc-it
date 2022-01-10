@@ -1,6 +1,7 @@
 import * as SmartContracts from './smart-contracts';
 import Mobile from './mobile.mdx';
-import NewProject from './new-project.mdx';
-import Web from './web.mdx';
+import VsysStack from './vsys-stack.mdx';
+import WhereToBegin from './where-to-begin.mdx';
+import QuickTutorials from './quick-tutorials.mdx';
 
-export { Mobile, NewProject, Web, SmartContracts };
+export { Mobile, WhereToBegin, QuickTutorials, VsysStack, SmartContracts };

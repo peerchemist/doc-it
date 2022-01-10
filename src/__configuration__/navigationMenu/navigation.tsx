@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Docs from '../../docs';
-import { MarkdownPage, DevResources } from '../../app/pages';
+import { MarkdownPage } from '../../app/pages';
 
 export type SimpleNavItem = {
     title: string;
@@ -29,18 +29,18 @@ export const pageDefinitions: SimpleNavItem[] = [
         pages: [
             {
                 title: 'VSYS Stack',
-                url: '/new-project',
-                component: <MarkdownPage title={'VSYS Stack'} markdown={Docs.GetStarted.NewProject} />,
+                url: '/vsys-stack',
+                component: <MarkdownPage title={'VSYS Stack'} markdown={Docs.GetStarted.VsysStack} />,
             },
             {
                 title: 'Where to Begin?',
-                url: '/new-project',
-                component: <MarkdownPage title={'Where to Begin?'} markdown={Docs.GetStarted.NewProject} />,
+                url: '/where-to-begin',
+                component: <MarkdownPage title={'Where to Begin?'} markdown={Docs.GetStarted.WhereToBegin} />,
             },
             {
                 title: 'Quick Tutorials',
-                url: '/web',
-                component: <MarkdownPage title={'Quick Tutorials'} markdown={Docs.GetStarted.Web} />,
+                url: '/quick-tutorials',
+                component: <MarkdownPage title={'Quick Tutorials'} markdown={Docs.GetStarted.QuickTutorials} />,
             },
             {
                 title: 'Smart Contracts',
@@ -130,80 +130,6 @@ export const pageDefinitions: SimpleNavItem[] = [
                 component: <MarkdownPage title={'Brightlayer UI CLI'} markdown={Docs.Development.CLI} />,
             },
             {
-                title: 'Web Frameworks',
-                url: '/frameworks-web',
-                pages: [
-                    {
-                        title: 'Introduction',
-                        url: '/intro',
-                        component: (
-                            <MarkdownPage
-                                title={'Web Framework Introduction'}
-                                markdown={Docs.Development.WebFrameworks.Intro}
-                            />
-                        ),
-                    },
-                    {
-                        title: 'Angular Guide',
-                        url: '/angular',
-                        component: (
-                            <MarkdownPage title={'Angular Guide'} markdown={Docs.Development.WebFrameworks.Angular} />
-                        ),
-                    },
-                    {
-                        title: 'React Guide',
-                        url: '/react',
-                        component: (
-                            <MarkdownPage title={'React Guide'} markdown={Docs.Development.WebFrameworks.React} />
-                        ),
-                    },
-                ],
-            },
-            {
-                title: 'Mobile Frameworks',
-                url: '/frameworks-mobile',
-                pages: [
-                    {
-                        title: 'Introduction',
-                        url: '/intro',
-                        component: (
-                            <MarkdownPage
-                                title={'Mobile Framework Introduction'}
-                                markdown={Docs.Development.MobileFrameworks.Intro}
-                            />
-                        ),
-                    },
-                    {
-                        hidden: true,
-                        title: 'Apache Cordova Guide',
-                        url: '/cordova',
-                        component: (
-                            <MarkdownPage
-                                title={'Apache Cordova Guide'}
-                                markdown={Docs.Development.MobileFrameworks.Cordova}
-                            />
-                        ),
-                    },
-                    {
-                        title: 'Ionic Guide',
-                        url: '/ionic',
-                        component: (
-                            <MarkdownPage title={'Ionic Guide'} markdown={Docs.Development.MobileFrameworks.Ionic} />
-                        ),
-                    },
-                    {
-                        title: 'React Native Guide',
-                        url: '/react-native',
-                        component: (
-                            <MarkdownPage
-                                title={'React Native Guide'}
-                                markdown={Docs.Development.MobileFrameworks.ReactNative}
-                            />
-                        ),
-                    },
-                ],
-            },
-            {
                 title: 'Testing',
                 url: '/testing',
                 component: <MarkdownPage title={'Testing'} markdown={Docs.Development.Testing} />,
@@ -219,7 +145,7 @@ export const pageDefinitions: SimpleNavItem[] = [
                 title: 'Device Commissioning',
                 url: '/device-commissioning',
                 component: (
-                    <MarkdownPage title={'Device Commissioning'} markdown={Docs.Workflows.DeviceCommissioning} />
+                    <MarkdownPage title={'Testing'} markdown={Docs.Development.Testing} />
                 ),
             },
         ],
@@ -229,14 +155,9 @@ export const pageDefinitions: SimpleNavItem[] = [
         url: '/resources',
         pages: [
             {
-                title: 'Node Explorer',
-                url: '/developer',
-                component: <DevResources />,
-            },
-            {
                 title: 'Testnet Explorer',
                 url: '/designer',
-                component: <MarkdownPage title={'Designer Resources'} markdown={Docs.Resources.DesignerResources} />,
+                component: <MarkdownPage title={'Testing'} markdown={Docs.Development.Testing} />,
             },
         ],
     },

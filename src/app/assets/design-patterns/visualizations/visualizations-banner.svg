@@ -3,7 +3,7 @@
 <path d="M219 210.512L337.25 199.573L455.5 238L573.75 199.573L692 192" stroke="#268FCA" stroke-width="10"/>
 <path d="M219 171.333L337.25 194.201L455.5 199L573.75 149.031L692 149" stroke="#80BDE0" stroke-width="10"/>
 <path d="M219 90.4232L337.25 45L455.5 101.991L573.75 135L692 106.505" stroke="#4DA3D4" stroke-width="10" stroke-dasharray="20 30"/>
-<path d="M219 280.374L337.25 325L455.5 252L573.75 303.62L692 316.221" stroke="#007BC1" stroke-width="10" stroke-dasharray="20 30"/>
+<path d="M219 280.374L337.25 325L455.5 252L573.75 303.62L692 316.221" stroke="#FF8232" stroke-width="10" stroke-dasharray="20 30"/>
 <line x1="219" y1="374" x2="692" y2="374" stroke="#E2E5E5" stroke-width="10"/>
 <line x1="219" y1="379" x2="219" y2="38" stroke="#E2E5E5" stroke-width="10"/>
 <rect x="159" y="62" width="35" height="24" fill="#D5D8DA"/>
@@ -21,10 +21,10 @@
 <path d="M542 95H613V163.566H581.09L577.101 174L573.112 163.566H542V95Z" fill="white"/>
 <path d="M542 94.5H541.5V95V163.566V164.066H542H572.768L576.634 174.179L577.101 175.4L577.568 174.179L581.434 164.066H613H613.5V163.566V95V94.5H613H542Z" stroke="#424E54" stroke-opacity="0.2"/>
 </g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M578 112.5C568.34 112.5 560.5 120.34 560.5 130C560.5 139.66 568.34 147.5 578 147.5C587.66 147.5 595.5 139.66 595.5 130C595.5 120.34 587.66 112.5 578 112.5ZM576.25 138.75V128.25H579.75V138.75H576.25ZM576.25 121.25V124.75H579.75V121.25H576.25Z" fill="#007BC1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M578 112.5C568.34 112.5 560.5 120.34 560.5 130C560.5 139.66 568.34 147.5 578 147.5C587.66 147.5 595.5 139.66 595.5 130C595.5 120.34 587.66 112.5 578 112.5ZM576.25 138.75V128.25H579.75V138.75H576.25ZM576.25 121.25V124.75H579.75V121.25H576.25Z" fill="#FF8232"/>
 <line x1="108" y1="417" x2="161.682" y2="417" stroke="#268FCA" stroke-width="10"/>
 <rect x="171.443" y="403" width="52.8691" height="28" fill="#D5D8DA"/>
-<line x1="264.312" y1="417" x2="317.994" y2="417" stroke="#007BC1" stroke-width="10" stroke-dasharray="20 10"/>
+<line x1="264.312" y1="417" x2="317.994" y2="417" stroke="#FF8232" stroke-width="10" stroke-dasharray="20 10"/>
 <rect x="327.755" y="403" width="52.8691" height="28" fill="#D5D8DA"/>
 <line x1="420.624" y1="417" x2="474.306" y2="417" stroke="#80BDE0" stroke-width="10"/>
 <rect x="484.067" y="403" width="52.8691" height="28" fill="#D5D8DA"/>

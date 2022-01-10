@@ -165,7 +165,7 @@ export const SharedToolbar = (props: SharedToolbarProps): JSX.Element => {
                         />
                     ) : (
                         <Typography>
-                            Brightlayer <b>User Interface</b>
+                            V Systems <b>User Interface</b>
                         </Typography>
                     )}
                     <Spacer />

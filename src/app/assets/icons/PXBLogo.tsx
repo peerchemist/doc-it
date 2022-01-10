@@ -65,7 +65,7 @@ export const SmallPXBLogo: React.FC = () => (
     <div style={{ display: 'inline-flex', alignItems: 'center' }}>
         <PXBlueSVG size={32} color={'white'} />
         <Typography variant={'h5'} style={{ fontWeight: 300, marginLeft: 8 }}>
-            Brightlayer UI
+            V Systems
         </Typography>
     </div>
 );

@@ -5,8 +5,6 @@ import * as Patterns from './patterns';
 import * as GetStarted from './get-started';
 import * as Development from './development';
 import * as Community from './community';
-import * as Resources from './resources';
-import * as Workflows from './workflows';
 
 export {
     Overview,
@@ -16,6 +14,4 @@ export {
     GetStarted,
     Development,
     Community,
-    Resources,
-    Workflows,
 };

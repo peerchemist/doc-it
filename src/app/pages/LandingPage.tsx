@@ -78,7 +78,7 @@ export const LandingPage: React.FC = (): JSX.Element => {
 
     return (
         <>
-            <SharedToolbar navigationIcon={<Menu />} />
+            <SharedToolbar position={'sticky'} navigationIcon={<Menu />} />
             <div className={classes.banner} style={landingPageBanner}>
                 {customBannerText ? (
                     <div style={customBannerText} className={classes.customBannerText} />
@@ -166,7 +166,7 @@ export const LandingPage: React.FC = (): JSX.Element => {
             <AppBar position={'static'} className={classes.footer} elevation={0}>
                 <Toolbar variant={'dense'}>
                     <Typography variant={'caption'} align={'center'} style={{ flex: '1 1 0px' }}>
-                        Copyright {new Date().getFullYear()} Eaton. Licensed under BSD-3-Clause.
+                        Copyright {new Date().getFullYear()} V Systems.
                     </Typography>
                 </Toolbar>
             </AppBar>

@@ -17,9 +17,9 @@
 <rect opacity="0.4" width="814" height="458" fill="black"/>
 <rect opacity="0.3" x="-10" y="-24" width="360" height="501" rx="4" fill="#1D2529"/>
 <rect y="-7.30005" width="340" height="467.6" fill="white"/>
-<rect width="340" height="64" fill="#007BC1"/>
+<rect width="340" height="64" fill="#FF8232"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M14 26.6667V24H38V26.6667H14ZM14 33.3333H38V30.6667H14V33.3333ZM14 40H38V37.3333H14V40Z" fill="white"/>
-<rect x="10" y="89" width="32" height="32" rx="8" fill="#007BC1"/>
+<rect x="10" y="89" width="32" height="32" rx="8" fill="#FF8232"/>
 <rect x="74" y="95" width="207" height="20" fill="#B3D7EC"/>
 <rect x="74" y="22" width="207" height="20" fill="#268FCA"/>
 <rect x="74" y="149" width="207" height="20" fill="#B3D7EC"/>
@@ -28,10 +28,10 @@
 <rect x="74" y="419" width="207" height="20" fill="#B3D7EC"/>
 <rect x="74" y="257" width="207" height="20" fill="#80BDE0"/>
 <rect x="74" y="311" width="207" height="20" fill="#80BDE0"/>
-<rect x="10" y="143" width="32" height="32" rx="8" fill="#007BC1"/>
-<rect x="10" y="197" width="32" height="32" rx="8" fill="#007BC1"/>
-<rect x="10" y="359" width="32" height="32" rx="8" fill="#007BC1"/>
-<rect x="10" y="413" width="32" height="32" rx="8" fill="#007BC1"/>
+<rect x="10" y="143" width="32" height="32" rx="8" fill="#FF8232"/>
+<rect x="10" y="197" width="32" height="32" rx="8" fill="#FF8232"/>
+<rect x="10" y="359" width="32" height="32" rx="8" fill="#FF8232"/>
+<rect x="10" y="413" width="32" height="32" rx="8" fill="#FF8232"/>
 </g>
 <defs>
 <clipPath id="clip0">
