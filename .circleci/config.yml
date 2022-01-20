@@ -7,10 +7,10 @@ jobs:
         environment:
             - MASTER_BRANCH: master
             - DEV_BRANCH: dev
-            - DEV_TARGET: https://github.com/brightlayer-ui-dev/brightlayer-ui-dev.github.io
-            - MASTER_TARGET: https://github.com/brightlayer-ui/brightlayer-ui.github.io
-            - GH_EMAIL: brightlayer-ui@eaton.com
-            - GH_NAME: Brightlayer UI Agent
+            - DEV_TARGET: https://virtualeconomy.github.io/doc-it/
+            - MASTER_TARGET: https://github.com/virtualeconomy/brightlayer-ui.github.io
+            - GH_EMAIL: peerchemist@v.systems
+            - GH_NAME: Doc agent
         steps:
             - checkout
             - restore_cache:
