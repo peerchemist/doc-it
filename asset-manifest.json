@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4993f48e.chunk.css",
-    "main.js": "/static/js/main.a691c250.chunk.js",
-    "main.js.map": "/static/js/main.a691c250.chunk.js.map",
+    "main.js": "/static/js/main.388f8c86.chunk.js",
+    "main.js.map": "/static/js/main.388f8c86.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f1991e5f.js",
     "runtime-main.js.map": "/static/js/runtime-main.f1991e5f.js.map",
     "static/css/2.e9454884.chunk.css": "/static/css/2.e9454884.chunk.css",
@@ -16,7 +16,6 @@
     "static/media/banner.f1c17324.svg": "/static/media/banner.f1c17324.svg",
     "static/media/castles.30765c0e.svg": "/static/media/castles.30765c0e.svg",
     "static/media/christmas-eve.4077e3aa.png": "/static/media/christmas-eve.4077e3aa.png",
-    "static/media/circles.1aea7c7b.svg": "/static/media/circles.1aea7c7b.svg",
     "static/media/cursor.d5350c4a.svg": "/static/media/cursor.d5350c4a.svg",
     "static/media/death-star.3297acba.svg": "/static/media/death-star.3297acba.svg",
     "static/media/design-system.354189a0.jpg": "/static/media/design-system.354189a0.jpg",
@@ -48,7 +47,6 @@
     "static/media/700.css": "/static/media/roboto-mono-vietnamese-700-normal.b5bbebda.woff2",
     "static/media/800-italic.css": "/static/media/open-sans-vietnamese-800-italic.3fb21eae.woff2",
     "static/media/800.css": "/static/media/open-sans-vietnamese-800-normal.929fa8ba.woff2",
-    "static/media/patterns.eee94901.svg": "/static/media/patterns.eee94901.svg",
     "static/media/st-patricks-day-appbar-tile.ba7b1c10.png": "/static/media/st-patricks-day-appbar-tile.ba7b1c10.png",
     "static/media/st-patricks-day-banner.b78cd9fe.png": "/static/media/st-patricks-day-banner.b78cd9fe.png",
     "static/media/thanksgiving-appbar-tile.8db094b1.png": "/static/media/thanksgiving-appbar-tile.8db094b1.png",
@@ -58,6 +56,7 @@
     "static/media/title-block.080ffc15.gif": "/static/media/title-block.080ffc15.gif",
     "static/media/title-block.0fe2d6ee.svg": "/static/media/title-block.0fe2d6ee.svg",
     "static/media/title-block.c803dfe6.png": "/static/media/title-block.c803dfe6.png",
+    "static/media/vsys-docs-banner.71d71309.jpg": "/static/media/vsys-docs-banner.71d71309.jpg",
     "static/media/vsystems-main.a8d8727c.png": "/static/media/vsystems-main.a8d8727c.png",
     "static/media/vsystems-white.a7fdb905.png": "/static/media/vsystems-white.a7fdb905.png"
   },
@@ -66,6 +65,6 @@
     "static/css/2.e9454884.chunk.css",
     "static/js/2.17070abe.chunk.js",
     "static/css/main.4993f48e.chunk.css",
-    "static/js/main.a691c250.chunk.js"
+    "static/js/main.388f8c86.chunk.js"
   ]
 }
