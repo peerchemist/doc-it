@@ -38,11 +38,6 @@ export const pageDefinitions: SimpleNavItem[] = [
                 component: <MarkdownPage title={'Where to Begin?'} markdown={Docs.GetStarted.WhereToBegin} />,
             },
             {
-                title: 'Quick Tutorials',
-                url: '/quick-tutorials',
-                component: <MarkdownPage title={'Quick Tutorials'} markdown={Docs.GetStarted.QuickTutorials} />,
-            },
-            {
                 title: 'Smart Contracts',
                 url: '/smart-contracts',
                 pages: [
