@@ -1,8 +1,9 @@
 {
     "name": "v-systems-docs",
     "author": "V Systems developers",
-    "version": "2.4.2",
+    "version": "0.1",
     "private": true,
+    "homepage": ".",
     "scripts": {
         "start": "node scripts/start.js",
         "build": "yarn indexer && node scripts/build.js",
