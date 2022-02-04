@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.b488db9d.chunk.css",
-    "main.js": "/docs/static/js/main.0ade8774.chunk.js",
-    "main.js.map": "/docs/static/js/main.0ade8774.chunk.js.map",
+    "main.js": "/docs/static/js/main.68571b87.chunk.js",
+    "main.js.map": "/docs/static/js/main.68571b87.chunk.js.map",
     "runtime-main.js": "/docs/static/js/runtime-main.401375e4.js",
     "runtime-main.js.map": "/docs/static/js/runtime-main.401375e4.js.map",
-    "static/css/2.2399ae5b.chunk.css": "/docs/static/css/2.2399ae5b.chunk.css",
-    "static/js/2.326ccb89.chunk.js": "/docs/static/js/2.326ccb89.chunk.js",
-    "static/js/2.326ccb89.chunk.js.map": "/docs/static/js/2.326ccb89.chunk.js.map",
+    "static/css/2.c88cacdc.chunk.css": "/docs/static/css/2.c88cacdc.chunk.css",
+    "static/js/2.4cd5480b.chunk.js": "/docs/static/js/2.4cd5480b.chunk.js",
+    "static/js/2.4cd5480b.chunk.js.map": "/docs/static/js/2.4cd5480b.chunk.js.map",
     "index.html": "/docs/index.html",
-    "static/css/2.2399ae5b.chunk.css.map": "/docs/static/css/2.2399ae5b.chunk.css.map",
+    "static/css/2.c88cacdc.chunk.css.map": "/docs/static/css/2.c88cacdc.chunk.css.map",
     "static/css/main.b488db9d.chunk.css.map": "/docs/static/css/main.b488db9d.chunk.css.map",
-    "static/js/2.326ccb89.chunk.js.LICENSE.txt": "/docs/static/js/2.326ccb89.chunk.js.LICENSE.txt",
+    "static/js/2.4cd5480b.chunk.js.LICENSE.txt": "/docs/static/js/2.4cd5480b.chunk.js.LICENSE.txt",
+    "static/media/katex.min.css": "/docs/static/media/KaTeX_Typewriter-Regular.c5441b17.ttf",
     "static/media/banner.a68f5495.svg": "/docs/static/media/banner.a68f5495.svg",
     "static/media/banner.f1c17324.svg": "/docs/static/media/banner.f1c17324.svg",
     "static/media/castles.30765c0e.svg": "/docs/static/media/castles.30765c0e.svg",
@@ -54,17 +55,17 @@
     "static/media/tile.25f500f4.svg": "/docs/static/media/tile.25f500f4.svg",
     "static/media/tile.d2fec8a8.svg": "/docs/static/media/tile.d2fec8a8.svg",
     "static/media/title-block.080ffc15.gif": "/docs/static/media/title-block.080ffc15.gif",
-    "static/media/title-block.0fe2d6ee.svg": "/docs/static/media/title-block.0fe2d6ee.svg",
     "static/media/title-block.c803dfe6.png": "/docs/static/media/title-block.c803dfe6.png",
+    "static/media/v_swap_flow.9f33a63b.png": "/docs/static/media/v_swap_flow.9f33a63b.png",
     "static/media/vsys-docs-banner.71d71309.jpg": "/docs/static/media/vsys-docs-banner.71d71309.jpg",
     "static/media/vsystems-main.a8d8727c.png": "/docs/static/media/vsystems-main.a8d8727c.png",
     "static/media/vsystems-white.a7fdb905.png": "/docs/static/media/vsystems-white.a7fdb905.png"
   },
   "entrypoints": [
     "static/js/runtime-main.401375e4.js",
-    "static/css/2.2399ae5b.chunk.css",
-    "static/js/2.326ccb89.chunk.js",
+    "static/css/2.c88cacdc.chunk.css",
+    "static/js/2.4cd5480b.chunk.js",
     "static/css/main.b488db9d.chunk.css",
-    "static/js/main.0ade8774.chunk.js"
+    "static/js/main.68571b87.chunk.js"
   ]
 }
