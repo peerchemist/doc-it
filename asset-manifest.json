@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.7a11fa60.chunk.css",
-    "main.js": "/docs/static/js/main.08d43abe.chunk.js",
-    "main.js.map": "/docs/static/js/main.08d43abe.chunk.js.map",
+    "main.js": "/docs/static/js/main.c33c4f16.chunk.js",
+    "main.js.map": "/docs/static/js/main.c33c4f16.chunk.js.map",
     "runtime-main.js": "/docs/static/js/runtime-main.401375e4.js",
     "runtime-main.js.map": "/docs/static/js/runtime-main.401375e4.js.map",
     "static/css/2.c88cacdc.chunk.css": "/docs/static/css/2.c88cacdc.chunk.css",
@@ -44,6 +44,7 @@
     "static/media/thanksgiving-appbar-tile.8db094b1.png": "/docs/static/media/thanksgiving-appbar-tile.8db094b1.png",
     "static/media/thanksgiving-banner.02fe078d.jpg": "/docs/static/media/thanksgiving-banner.02fe078d.jpg",
     "static/media/tile.25f500f4.svg": "/docs/static/media/tile.25f500f4.svg",
+    "static/media/vOptionContract.195da1c3.png": "/docs/static/media/vOptionContract.195da1c3.png",
     "static/media/v_swap_flow.9f33a63b.png": "/docs/static/media/v_swap_flow.9f33a63b.png",
     "static/media/vsys-docs-banner.71d71309.jpg": "/docs/static/media/vsys-docs-banner.71d71309.jpg",
     "static/media/vsystems-main.a8d8727c.png": "/docs/static/media/vsystems-main.a8d8727c.png",
@@ -54,6 +55,6 @@
     "static/css/2.c88cacdc.chunk.css",
     "static/js/2.6b35f413.chunk.js",
     "static/css/main.7a11fa60.chunk.css",
-    "static/js/main.08d43abe.chunk.js"
+    "static/js/main.c33c4f16.chunk.js"
   ]
 }
