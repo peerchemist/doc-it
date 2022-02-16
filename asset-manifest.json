@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.7a11fa60.chunk.css",
-    "main.js": "/docs/static/js/main.bc695306.chunk.js",
-    "main.js.map": "/docs/static/js/main.bc695306.chunk.js.map",
+    "main.js": "/docs/static/js/main.baa26146.chunk.js",
+    "main.js.map": "/docs/static/js/main.baa26146.chunk.js.map",
     "runtime-main.js": "/docs/static/js/runtime-main.401375e4.js",
     "runtime-main.js.map": "/docs/static/js/runtime-main.401375e4.js.map",
     "static/css/2.c88cacdc.chunk.css": "/docs/static/css/2.c88cacdc.chunk.css",
@@ -17,7 +17,6 @@
     "static/media/castles.30765c0e.svg": "/docs/static/media/castles.30765c0e.svg",
     "static/media/christmas-eve.4077e3aa.png": "/docs/static/media/christmas-eve.4077e3aa.png",
     "static/media/design-system.354189a0.jpg": "/docs/static/media/design-system.354189a0.jpg",
-    "static/media/design.55fa9898.jpg": "/docs/static/media/design.55fa9898.jpg",
     "static/media/develop.11642a00.jpg": "/docs/static/media/develop.11642a00.jpg",
     "static/media/github.37c69db2.png": "/docs/static/media/github.37c69db2.png",
     "static/media/halloween-appbar-tile.678f51e3.svg": "/docs/static/media/halloween-appbar-tile.678f51e3.svg",
@@ -55,6 +54,6 @@
     "static/css/2.c88cacdc.chunk.css",
     "static/js/2.6b35f413.chunk.js",
     "static/css/main.7a11fa60.chunk.css",
-    "static/js/main.bc695306.chunk.js"
+    "static/js/main.baa26146.chunk.js"
   ]
 }
