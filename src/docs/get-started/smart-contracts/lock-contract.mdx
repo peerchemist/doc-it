@@ -2,173 +2,21 @@
 
 # Lock Contract
 
+
 ## Introduction
 
 Lock contracts allow users to lock a specific token in the contract for some period of time. This allows users to guarantee they have a certain amount of funds upon lock expiration. This may be helpful in implementing some kinds of staking interactions with users of a VSYS token for instance.
 
+
+## Implementation
+
 The lock contract is a very simple contract that is able to store a selected token. It allows anyone to execute this contract and lock their funds into it for some period of time. It is not necessary to open multiple lock contracts for different people to lock their coins of tokens.
 
-## Using the VSYS Python API Wrapper (pyvsystems)
 
-To generate and broadcast transactions, we can use pyvsystems to test contract functionalities on the Vsys chain. 
+## Tutorial
 
-### Install pyvsystems
+For the tutorials, you can check the documentations for the token contracts of SDKs.
 
-Pyvsystems can be installed by first cloning the GitHub repository in terminal.
+- [Python SDK](https://github.com/virtualeconomy/py-vsys/tree/main/doc/smart_contract)
 
-```sh
-git clone https://github.com/virtualeconomy/pyvsystems.git
-```
-
-Then using pip, we can install the repository as a package.
-
-```sh
-pip3 install pyvsystems/.
-```
-
-Now you can import pyvsystems in your own workplace.
-
-## Register a lock contract
-
-Before we start, please make sure you have already set up a mainnet node or a devnet node. For the devnet node set-up instruction, you can refer to “How to build your own V Systems Devnet“.
-
-### 1. To create and execute a lock contract of your own, you first need to initialize API connection.
-
-<b>Data required:</b>
-
-1. Your node address.
-2. Your api key(optional).
-3. Your seed.
-
-```python:
-import pyvsystems as pv 
-from pyvsystems import Account
-from pyvsystems.contract_helper import * 
-
-custom_wrapper = pv.create_api_wrapper("your_node_address", api_key="your_node_api_key(optional)") 
-# chain = pv.Chain(chain_name='mainnet', chain_id='M', address_version=5, api_wrapper=custom_wrapper) # for mainnet 
-chain = pv.Chain(chain_name='testnet', chain_id='T', address_version=5, api_wrapper=custom_wrapper) #for testnet or devnet
-sender = Account(chain=chain, seed="<your_sender_seed>") 
-```
-
-### 2. Next, we need to register the contract with contract_helper in pyvsystems. 
-
-<b>Data required:</b>
-
-1.  Your token id. (you can create your own token in devnet for testing. For more information, please refer to “Token Contract”)
-
-```python:
-lock_contract_helper = LockContractHelper()
-
-lock_contract_object = lock_contract_helper.contract_object
-
-register_lock_contract_data_stack = lock_contract_helper.register_data_stack_generator("your_token_id")
-
-print("register contract information: ",sender.register_contract(lock_contract_object, register_lock_contract_data_stack))
-
-```
-
-You can see your contract information in the terminal. Take note of your contract id.
-
-## Using Lock Contract functions
-
-After registering the lock contract, you can execute the functions of the contract.
-
-| Executable functions | Function ID | Inputs        | Input types | Description                                |
-|:--------------------:|:-----------:|:-------------:|:-----------:|:------------------------------------------:|
-| lock()               | 0           | (“timestamp”) | long        | Lock the funds until a specified timestamp |
-
-### Lock Function:
-
-<b>Data required:</b>
-
-1. Lock contract’s id
-2. Lock timestamp
-
-```python:
-
-lock_contract_helper = LockContractHelper()
-
-lock_contract_id = "your_lock_contract_id"
-
-lock_function_id = lock_contract_helper.lock_function_index
-
-lock_data_stack = lock_contract_helper.lock_data_stack_generator(your_timestamp)
-
-sender.execute_contract(lock_contract_id, lock_function_id, lock_data_stack)
-
-```
-
-### Querying the Contract database
-
-In order for the contract to do anything, it has to store some information within the database. This information can be queried by using the correct database key within the full node. The contract helper objects contain the corresponding database keys for each stored variable.
-
-### Get Lock Contract Maker
-
-<b>Data required:</b>
-
-1. Lock contract’s id
-
-```python:
-lock_contract_helper = LockContractHelper()
-
-lock_contract_id = "<your_lock_contract_id>"
-
-maker_db_key = lock_contract_helper.maker_db_key_generator()
-
-print(chain.contract_db_query(lock_contract_id, maker_db_key))
-```
-
-### Get Token id of the Supported Token
-
-This helps you retrieve the token ID of the supported token in the lock contract.
-
-<b>Data required:</b>
-
-1. Lock contract’s id
-
-```python:
-lock_contract_helper = LockContractHelper()
-
-lock_contract_id = "<your_lock_contract_id>"
-
-token_id_db_key = lock_contract_helper.token_id_db_key_generator()
-
-print(chain.contract_db_query(lock_contract_id, token_id_db_key))
-```
-
-### Get Address' Contract Balance
-
-This helps you retrieve the Address' contract balance in the lock contract.
-
-<b>Data required:</b>
-
-1. Lock contract’s id
-
-```python:
-lock_contract_helper = LockContractHelper()
-
-lock_contract_id = "<your_lock_contract_id>"
-
-contract_balance_db_key = lock_contract_helper.contract_balance_db_key_generator(sender.address)#sender is defined in initialize part
-
-print(chain.contract_db_query(lock_contract_id, contract_balance_db_key))
-```
-
-###  Get Address' Lock Time
-
-This helps you retrieve the lock time of the Address from the Lock Contract ID in the lock contract.
-
-<b>Data required:</b>
-
-1. Lock contract’s id
-
-```python:
-lock_contract_helper = LockContractHelper()
-
-lock_contract_id = "<your_lock_contract_id>"
-
-contract_lock_time_db_key = lock_contract_helper.contract_lock_time_db_key_generator(sender.address)
-
-print(chain.contract_db_query(lock_contract_id, contract_lock_time_db_key))
-```
+- [Javascript SDK](https://github.com/virtualeconomy/js-vsys/tree/main/doc/smart_contract)

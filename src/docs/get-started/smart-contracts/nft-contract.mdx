@@ -2,47 +2,21 @@
 
 # NFT Contract
 
+
 ## Introduction
 
 The Non-fungible Token Contract acts as a method to create a single token that cannot be split into any parts. This gives a neat way of proving the ownership of some unique asset. A simple example is a token representing an item within a game, this token can then be sent from wallet to wallet, representing an in game trade.
+
 
 ## Implementation
 
 The Non-fungible contract controls a single token that can be sent, deposited or withdrawn. When registering a Non-fungible contract, it takes in no inputs. The token id of the issued token should be used to represent some form of unique asset, and the ownership of this token can easily be confirmed on the VSYS blockchain. It should be noted that the Non-fungible Token Contract can issue multiple tokens, each with its unique token id.
 
 
-## Register a Non-fungible Token Contract
+## Tutorial
 
-### Initialize API Connection
+For the tutorials, you can check the documentations for the token contracts of SDKs.
 
-```python:
-import pyvsystems as pv
-from pyvsystems import Account
-from pyvsystems.contract import token_id_from_contract_id
-from pyvsystems.contract_helper import *
+- [Python SDK](https://github.com/virtualeconomy/py-vsys/tree/main/doc/smart_contract)
 
-custom_wrapper = pv.create_api_wrapper("your_node_address", api_key="your_node_api_key(optional)")
-# chain = pv.Chain(chain_name='mainnet', chain_id='M', address_version=5, api_wrapper=custom_wrapper)
-
-chain = pv.Chain(chain_name='testnet', chain_id='T', address_version=5, api_wrapper=custom_wrapper)
-
-sender = Account(chain=chain, seed="your_sender_seed")
-```
-
-### Non-fungible Token Contract ByteString:
-
-```python:
-VJodouhmnHVDwtkBZ2NdgahT7NAgNE9EpWoZApzobhpua2nDL9D3sbHSoRRk8bEFeme2BHrXPdcq5VNJcPdGMUD54Smwatyx74cPJyet6bCWmLciHE2jGw9u5TmatjdpFSjGKegh76GvJstK3VaLagvsJJMaaKM9MNXYtgJyDr1Zw7U9PXV7N9TQnSsqz6EHMgDvd8aTDqEG7bxxAotkAgeh4KHqnk6Ga117q5AJctJcbUtD99iUgPmJrC8vzX85TEXgHRY1psW7D6daeExfVVrEPHFHrU6XfhegKv9vRbJBGL861U4Qg6HWbWxbuitgtKoBazSp7VofDtrZebq2NSpZoXCAZC8DRiaysanAqyCJZf7jJ8NfXtWej8L9vg8PVs65MrEmK8toadcyCA2UGzg6pQKrMKQEUahruBiS7zuo62eWwJBxUD1fQ1RGPk9BbMDk9FQQxXu3thSJPnKktq3aJhD9GNFpvyEAaWigp5nfjgH5doVTQk1PgoxeXRAWQNPztjNvZWv6iD85CoZqfCWdJbAXPrWvYW5FsRLW1xJ4ELRUfReMAjCGYuFWdA3CZyefpiDEWqVTe5SA6J6XeUppRyXKpKQTc6upesoAGZZ2NtFDryq22izC6D5p1i98YpC6Dk1qcKevaANKHH8TfFoQT717nrQEY2aLoWrA1ip2t5etdZjNVFmghxXEeCAGy3NcLDFHmAfcBZhHKeJHp8H8HbiMRtWe3wmwKX6mPx16ahnd3dMGCsxAZfjQcy4J1HpuCm7rHMULkixUFYRYqx85c7UpLcijLRybE1MLRjEZ5SEYtazNuiZBwq1KUcNipzrxta9Rpvt2j4WyMadxPf5r9YeAaJJp42PiC6SGfyjHjRQN4K3pohdQRbbG4HQ95NaWCy7CAwbpXRCh9NDMMQ2cmTfB3KFW2M
-```
-
-### Code:
-```python:
-on_fungible_contract_helper = NonFungibleContractHelper()
-
-non_fungible_contract_object = non_fungible_contract_helper.contract_object
-
-register_non_fungible_data_stack = non_fungible_contract_helper.register_data_stack_generator()
-
-sender.register_contract(non_fungible_contract_object, register_non_fungible_data_stack)
-
-```
+- [Javascript SDK](https://github.com/virtualeconomy/js-vsys/tree/main/doc/smart_contract)
