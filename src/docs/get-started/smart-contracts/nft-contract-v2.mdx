@@ -1,0 +1,33 @@
+<!-- KEYWORDS: Non-Fungible Token Smart Contract V2-->
+
+# NFT Contract V2
+
+
+## Introduction
+
+The Non-fungible Token Contract V2 provides an advanced feature to create a single, unsplittable token. In the real world, there are lots of transactions involving different anonymous people, these transactions may result in losses for certain parties due to malicious activity. Thankfully, these unsafe transactions could be avoided by using black list or white list. In other words, we can put those suspicious people into the black list to block them from participating in transactions or place only credible, trusted people into the white list to only allow specific people to join transactions.
+
+
+## Implementation
+
+The Non-fungible contract V2 controls a single token that can be sent, deposited or withdrawn same to the previous version. It also supports the `updateListUser` and `updateListCtrt` function while the caller can put the target user address/contract account into the specified white/black list to restrict participants(i.e., user address/contract account) joining the Non-fungible Contract V2's transactions. On the other hand, the `updateListUser` and `updateListCtrt` function can also be used to remove the target user address/contract account from the white/black list when necessary.
+
+
+## Use Cases
+
+The use cases of white/black list in Non-fungible Contract V2 is similar to Token Contract V2.
+
+Although the white/black list can also be used to restrict the participants joining in transactions, they should be used in different conditions. Like if you hold a private gallery to sell some art works, you may put your members into white list. It allows some specified members make transactions in your gallery, moreover the public cannot make transactions in your gallery even if they hold the tokens.
+
+On the other hand, the gallery owner should create a Non-fungible contract V2 with black list feature if the owner's gallery is open to the public. Since it is complicated and costly to update customers to the white list one by one, the black list can be a more efficient and feasible way in this situation. And therefore, the gallery owner can only block someone with a history of bad behaviour from making transactions but others can still make their transactions.
+
+Therefore, Non-fungible Contract V2 improves the user experience that black/white list gives flexibility for the contract to apply in the real world for different purposes.
+
+
+## Tutorial
+
+For the tutorials, you can check the documentations for the token contracts of SDKs.
+
+- [Python SDK](https://github.com/virtualeconomy/py-vsys/tree/main/doc/smart_contract)
+
+- [Javascript SDK](https://github.com/virtualeconomy/js-vsys/tree/main/doc/smart_contract)

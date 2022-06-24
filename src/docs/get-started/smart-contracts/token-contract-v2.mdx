@@ -1,0 +1,43 @@
+<!-- KEYWORDS: Token Contract Smart Contract V2 -->
+
+# Token Contract V2
+
+
+## Introduction
+
+VSYS introduces the black/white list feature in Token Contract V2 accompanying the original functions. Therefore, it allows users to utilise a blockchain's immutable storage for their own needs without needing to create an entire blockchain themselves. In addtion, the black/white list function can restrict the access to resources and invalidate the unauthorised requests, so it can block the untrusted or suspicious people from participating transactions to ensure the safety of blockchain. By this reason, it is more tracible that people can check their states change on the white/black list over time. And so people can track across the transactions like when they are black-listed which make the transactions more transparent and accountable.
+
+This document will guide users through the implementation, and show the reader how they can create their own VSYS token.
+
+
+## Implementation
+
+Token Contract V2 has methods same to the previous version like `issue`, `send` and `destroy` tokens. It also supports the `updateListUser` and `updateListCtrt` function while the caller can put the target user address/contract account into the specified white/black list to restrict participants(i.e., user address/contract account) joining the Token Contract V2's transactions. On the other hand, the `updateListUser` and `updateListCtrt` function can also be used to remove the target user address/contract account from the white/black list when necessary.
+
+
+## Use Cases
+
+### Improvement of the cyber security
+
+One of the use cases for black list is to reduce the incentive of hacking your business. To cite an instance, an exchange uses some servers to store tokens for their clients and it is a high-target exchange at risk for cyber security threats. When the tokens are unfortunately stolen by hackers, the exchange can use black list to prevent them from obtaining the profit by selling the stolen tokens. In other words, the blacklisted hackers cannot buy or sell those stolen tokens and so the incentive of attacking the servers in the exchange could be reduced.
+
+### Losing access to user account
+
+Sometimes, users may forget the seed for their account. In this situation, the third party conducting KYC can provide a way for those users to get back their "lost" crypto assets. The users could apply to the third party for the replacement of their lost account first and then third party should verify the identification of the lost account by using KYC procedures. After verification with the users, the third party need to black-list the lost account and make an announcement for the blacklist decision. If the members have no opposition to the announcement, the third party can approve the new accounts and issue the same amount of tokens they own to their new accounts. As disscusion above, the users can reclaim their tokens but they cannot get back their tokens from their blacklisted (i.e., former) account even if they remember the seed.
+
+### Payment Controls/Restriction
+
+The main idea of using white list is to restrict only a group of members can make transactions with each other. For example, the community members in a discussion forum can make transactions to pay for support. To expand on this idea, a third party controls the transactions made only by the approved members. The white list feature can not only block the public, but also the members. In other words, the members can pay to another only if they pay for the third party first and then the third party would update them as whitelisted members to approve them making the following transactions.
+
+Therefore, Token Contract V2 improves the user experience that black/white list gives flexibility for the token contract to apply in the real world for different purposes.
+
+
+## Tutorial
+
+For the tutorials, you can check the documentations for the token contracts of SDKs.
+
+- [Python SDK](https://github.com/virtualeconomy/py-vsys/tree/main/doc/smart_contract)
+
+- [Javascript SDK](https://github.com/virtualeconomy/js-vsys/tree/main/doc/smart_contract)
+
+

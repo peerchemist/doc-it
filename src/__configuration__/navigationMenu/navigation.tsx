@@ -54,6 +54,13 @@ export const pageDefinitions: SimpleNavItem[] = [
                         ),
                     },
                     {
+                        title: 'Token Contract V2',
+                        url: '/token-contract-v2',
+                        component: (
+                            <MarkdownPage title={'Token Contract'} markdown={Docs.GetStarted.SmartContracts.TokenContractV2} />
+                        ),
+                    },
+                    {
                         title: 'Lock Contract',
                         url: '/lock-contract',
                         component: (
@@ -65,6 +72,13 @@ export const pageDefinitions: SimpleNavItem[] = [
                         url: '/nft-contract',
                         component: (
                             <MarkdownPage title={'Non-Fungible Token Contract'} markdown={Docs.GetStarted.SmartContracts.NftContract} />
+                        ),
+                    },
+                    {
+                        title: 'NFT Contract V2',
+                        url: '/nft-contract-v2',
+                        component: (
+                            <MarkdownPage title={'Non-Fungible Token Contract V2'} markdown={Docs.GetStarted.SmartContracts.NftContractV2} />
                         ),
                     },
                     {
