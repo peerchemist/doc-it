@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.7a11fa60.chunk.css",
-    "main.js": "/static/js/main.42554672.chunk.js",
-    "main.js.map": "/static/js/main.42554672.chunk.js.map",
+    "main.js": "/static/js/main.7ee97c7d.chunk.js",
+    "main.js.map": "/static/js/main.7ee97c7d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f1991e5f.js",
     "runtime-main.js.map": "/static/js/runtime-main.f1991e5f.js.map",
     "static/css/2.687a8ef3.chunk.css": "/static/css/2.687a8ef3.chunk.css",
-    "static/js/2.910f3308.chunk.js": "/static/js/2.910f3308.chunk.js",
-    "static/js/2.910f3308.chunk.js.map": "/static/js/2.910f3308.chunk.js.map",
+    "static/js/2.3d085f75.chunk.js": "/static/js/2.3d085f75.chunk.js",
+    "static/js/2.3d085f75.chunk.js.map": "/static/js/2.3d085f75.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.687a8ef3.chunk.css.map": "/static/css/2.687a8ef3.chunk.css.map",
     "static/css/main.7a11fa60.chunk.css.map": "/static/css/main.7a11fa60.chunk.css.map",
-    "static/js/2.910f3308.chunk.js.LICENSE.txt": "/static/js/2.910f3308.chunk.js.LICENSE.txt",
+    "static/js/2.3d085f75.chunk.js.LICENSE.txt": "/static/js/2.3d085f75.chunk.js.LICENSE.txt",
     "static/media/katex.min.css": "/static/media/KaTeX_Typewriter-Regular.c5441b17.ttf",
     "static/media/christmas-eve.4077e3aa.png": "/static/media/christmas-eve.4077e3aa.png",
     "static/media/design-system.354189a0.jpg": "/static/media/design-system.354189a0.jpg",
@@ -43,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.f1991e5f.js",
     "static/css/2.687a8ef3.chunk.css",
-    "static/js/2.910f3308.chunk.js",
+    "static/js/2.3d085f75.chunk.js",
     "static/css/main.7a11fa60.chunk.css",
-    "static/js/main.42554672.chunk.js"
+    "static/js/main.7ee97c7d.chunk.js"
   ]
 }
