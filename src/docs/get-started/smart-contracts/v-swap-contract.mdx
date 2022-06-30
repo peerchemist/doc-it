@@ -58,11 +58,99 @@ The price of the swap is dependent on how many tokens are within the pool. By us
 
 It's important to note that the pool also takes 0.3% of the trade as fees.
 
+## Explanation of Base and Target Token
+
+The swap function names may be somehow confusing, actually,
+
+- the `Base Token` is simply `Token A`, 
+- the `Target Token` is simply `Token B`, 
+
+which was decided when the contract was registered.
+
+In reality, it makes very little difference which token is the `Base Token` and which is the `Target Token`. However, it is very important that the correct function is used. 
+
+Take the [Javascript SDK](https://github.com/virtualeconomy/js-vsys) as an example, you can use the following codes to check the amount of tokens inside the pool and the balance of tokens, which will be used later in the calculation. You can also use our [Python SDK](https://github.com/virtualeconomy/py-vsys) with similar functions.
+
+```javascript
+
+import * as sp from './src/contract/v_swap_ctrt.js';
+
+// acnt: Account
+// nc: sp.VSwapCtrt
+
+const ABal = await nc.getTokABal(acnt.addr.data);
+console.log('ABal', ABal.data.toNumber());
+
+const BBal = await nc.getTokBBal(acnt.addr.data);
+console.log('BBal', BBal.data.toNumber());
+
+const ARes = await nc.getTokARes();
+console.log('ARes', ARes.data.toNumber());
+
+const BRes = await nc.getTokBRes();
+console.log('BRes', BRes.data.toNumber());
+
+```
+
+The use cases of the functions will be described one by one. You can also check [this](https://github.com/virtualeconomy/js-vsys/blob/main/doc/smart_contract/v_swap_ctrt.md) for Javascript SDK or [this](https://github.com/virtualeconomy/py-vsys/blob/main/doc/smart_contract/v_swap_ctrt.md) for Python SDK for detailed explanations of functions in V swap contract.
+
+### Swap Token for Exact Target Token
+In this situation, the trader wants to Swap token A for token B where the desired amount of token B is fixed. As a result, `swapAForExactB` function should be used.
+
+The calculation for this is:
+
+<InlineMath math="TokenAIn = \frac {reservedA*amount*1000}{(reservedB-amount)*997}"/>
+
+where the `amount` stands for the desired amount of token B, and the extra <InlineMath math="\frac {1000}{997}"/> is used to take fees.
+
+For example,
+
+```javascript
+
+const amountAMax = 20;
+const amountB = 10;
+
+const tenSec = Date.now() + 10 * 1000;
+
+const respInfo = await nc.swapAForExactB(
+	acnt1,
+	amountAMax,
+	amountB,
+	tenSec
+);
+console.log(respInfo);
+
+```
+
+`amountAMax` determines the maximum amount of token A the trader is willing to swap for token B. The calculation above calculates the exact amount of `TokenAIn`, but this assumes reservedA and reservedB does not change in the process of confirming the trade. If the two reserved values do change (due to another trade happening at the same time), there will be a different `TokenAIn` calculated when the trade really happens.
+
+### Swap Exact Token for Target Token
+In this situation, the trader wants to swap token A for token B where the amount of token A to pay is fixed. As a result, `swapExactAForB` function should be used.
+
+The calculation for this is:
+
+<InlineMath math="TokenBOut = \frac {reservedB*amount*997}{(reservedA*1000) + (amount*997)}"/>
+
+where the `amount` stands for the amount of token A, and the extra <InlineMath math="\frac {997}{1000}"/> is used to take fees.
+
+### Swap Token for Exact Base Token
+In this situation, the trader wants to swap token B for token A where the desired amount of token A is fixed. As a result, `swapBForExactA` function should be used.
+
+The calculation for this is:
+
+<InlineMath math="TokenBIn = \frac {reservedB*amount*1000}{(reservedA - amount)*997}"/>
+
+### Swap Exact Token for Base Token
+In this situation, the trader wants to swap token B for token A where the amount of token B to pay is fixed. As a result, `swapExactBForA` function should be used.
+
+The calculation for this is:
+
+<InlineMath math="TokenAOut = \frac {reservedA*amount*997}{(reservedB*1000) + (amount*997)}"/>
 
 ## Tutorial
 
 For the tutorials, you can check the documentations for the token contracts of SDKs.
 
-- [Python SDK](https://github.com/virtualeconomy/py-vsys/tree/main/doc/smart_contract)
+- [Python SDK](https://github.com/virtualeconomy/py-vsys/blob/main/doc/smart_contract/v_swap_ctrt.md)
 
-- [Javascript SDK](https://github.com/virtualeconomy/js-vsys/tree/main/doc/smart_contract)
+- [Javascript SDK](https://github.com/virtualeconomy/js-vsys/blob/main/doc/smart_contract/v_swap_ctrt.md)
